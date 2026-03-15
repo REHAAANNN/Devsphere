@@ -1,0 +1,9 @@
+.signInCard {
+  width: min(100%, 430px);
+  margin: 2.5rem auto 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  box-shadow: 0 16px 40px rgba(24, 34, 66, 0.15);
+  padding: 1rem;
+}

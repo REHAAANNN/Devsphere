@@ -1,10 +1,10 @@
 import { ClerkProvider } from '@clerk/nextjs'
-import LoginSign from '../components/login_sign/login_sign';
 import { ReactNode } from 'react';
+import './globals.css';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-       <ClerkProvider
+    <ClerkProvider
       appearance={{
         variables: {
           colorPrimary: "#7c3aed",        // Button color
@@ -28,7 +28,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     >
       <html lang="en">
         <body>
-          <LoginSign />
           {children}
         </body>
       </html>
