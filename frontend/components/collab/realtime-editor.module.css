@@ -1,0 +1,163 @@
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  box-shadow: 0 14px 34px rgba(22, 33, 68, 0.16);
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.84rem;
+  color: #ffffff;
+}
+
+.badge[data-status='connected'] {
+  background: #0e9f6e;
+}
+
+.badge[data-status='connecting'] {
+  background: #2563eb;
+}
+
+.roomInfo {
+  margin: 0;
+  color: #4b5b7e;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.participantsBlock {
+  background: #f4f7ff;
+  border: 1px solid #dfe7ff;
+  border-radius: 12px;
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.participantsTitle {
+  margin: 0;
+  color: #203152;
+  font-size: 0.95rem;
+}
+
+.participantChips {
+  margin-top: 0.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.participantChip {
+  padding: 0.32rem 0.6rem;
+  border-radius: 999px;
+  background: #dde6ff;
+  color: #273a63;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.emptyParticipant {
+  color: #5e6f96;
+  font-size: 0.84rem;
+}
+
+.editorLabel {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #23345a;
+  font-weight: 700;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.selectLabel {
+  color: #30436f;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.languageSelect {
+  border: 1px solid #ccd9ff;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  background: #ffffff;
+  color: #203152;
+  font-weight: 600;
+}
+
+.runButton {
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.runButton:hover {
+  background: #0b5e58;
+}
+
+.runButton:disabled {
+  cursor: not-allowed;
+  background: #6f8e8a;
+}
+
+.editor {
+  width: 100%;
+  min-height: 420px;
+  border: 1px solid #d7e0fa;
+  border-radius: 12px;
+  background: #fbfdff;
+  color: #14223f;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.editor:focus {
+  outline: 2px solid rgba(38, 93, 247, 0.4);
+  border-color: #5d81ff;
+}
+
+.outputBlock {
+  margin-top: 0.8rem;
+  background: #0f1e3e;
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.outputTitle {
+  margin: 0;
+  color: #dfe8ff;
+  font-size: 0.9rem;
+}
+
+.outputText {
+  margin: 0.55rem 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #cfe2ff;
+  font-size: 0.86rem;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+}

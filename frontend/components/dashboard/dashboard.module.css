@@ -19,6 +19,24 @@
   color: #4a5e84;
 }
 
+.primaryAction {
+  display: inline-flex;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #265df7 0%, #4a78ff 100%);
+  box-shadow: 0 10px 24px rgba(38, 93, 247, 0.27);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryAction:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(38, 93, 247, 0.34);
+}
+
 .sectionTitle {
   margin: 0 0 1rem;
   font-size: clamp(1.2rem, 2.3vw, 1.65rem);
