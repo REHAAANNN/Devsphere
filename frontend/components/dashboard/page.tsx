@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LogoutButton from "./LogoutButton";
 import AppShell from '@/components/layout/AppShell';
 import styles from './dashboard.module.css';
@@ -7,7 +8,7 @@ type DashboardProps = {
 };
 
 const features = [
-  { icon: '💻', title: 'Real-time Code Collaboration', desc: 'Work together seamlessly' },
+  { icon: '💻', title: 'Real-time Code Collaboration', desc: 'Open a shared room and edit live' },
   { icon: '📁', title: 'Project Management', desc: 'Organize your projects' },
   { icon: '🤖', title: 'AI Assisted Development', desc: 'Smart coding assistance' },
   { icon: '👥', title: 'Developer Community', desc: 'Connect with developers' },
@@ -21,6 +22,9 @@ export default function Dashboard({ firstName }: DashboardProps) {
       <section className={styles.welcomeCard}>
         <h2 className={styles.welcomeTitle}>Welcome back, {firstName}! 👋</h2>
         <p className={styles.welcomeSubtitle}>Ready to build something amazing today?</p>
+        <Link href="/collab/devsphere-room" className={styles.primaryAction}>
+          Launch Real-time Collaboration
+        </Link>
       </section>
 
       <section>
