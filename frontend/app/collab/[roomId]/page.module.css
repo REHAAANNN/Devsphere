@@ -1,0 +1,18 @@
+.backHomeButton {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2257f1 0%, #4f7fff 100%);
+  box-shadow: 0 8px 20px rgba(34, 87, 241, 0.3);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.backHomeButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(34, 87, 241, 0.37);
+}

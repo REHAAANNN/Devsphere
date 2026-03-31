@@ -80,6 +80,47 @@
   font-weight: 700;
 }
 
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.selectLabel {
+  color: #30436f;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.languageSelect {
+  border: 1px solid #ccd9ff;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  background: #ffffff;
+  color: #203152;
+  font-weight: 600;
+}
+
+.runButton {
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.runButton:hover {
+  background: #0b5e58;
+}
+
+.runButton:disabled {
+  cursor: not-allowed;
+  background: #6f8e8a;
+}
+
 .editor {
   width: 100%;
   min-height: 420px;
@@ -97,4 +138,26 @@
 .editor:focus {
   outline: 2px solid rgba(38, 93, 247, 0.4);
   border-color: #5d81ff;
+}
+
+.outputBlock {
+  margin-top: 0.8rem;
+  background: #0f1e3e;
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.outputTitle {
+  margin: 0;
+  color: #dfe8ff;
+  font-size: 0.9rem;
+}
+
+.outputText {
+  margin: 0.55rem 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #cfe2ff;
+  font-size: 0.86rem;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
 }
